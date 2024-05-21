@@ -50,7 +50,7 @@ function isrcGenerate(country, registrant, year, existingIsrcs) {
 
 // Dummy data
 let isrcValid = "QZZDS2400001";
-let isrcInalid = "QZZDS240000A";
+let isrcInvalid = "QZZDS240000A";
 
 let existingIsrcs = ["QZZDS2400001","QZZDS2400002","QZZDS2499998"]
 let currentYear = Number(new Date().getFullYear().toString().slice(2, 4));
