@@ -12,7 +12,7 @@ function isrcParser(isrc) {
 // Parse ISRC object to flat string
 function isrcToString(isrc) {
     if (typeof isrc !== "object" || Array.isArray(isrc) || isrc === null) {
-        return console.log("Error; 'isrc' should be an object.")
+        return console.log("Error; 'isrc' should be an object.");
     };
     let isrcString = isrc.country + isrc.registrant + isrc.year + isrc.designation.toString().padStart(5, "0");
     return isrcString;
